@@ -1,0 +1,81 @@
+link(rel="stylesheet" href="style.css")
+
+h1 业务数据库
+
+.row
+  .span
+    table
+      caption 客户
+      thead
+        tr
+          th id
+          th 姓名
+          th 地址
+          th 地区id
+      tbody
+        each item in customers
+          tr
+            td #{item.id}
+            td #{item.name}
+            td #{item.address}
+            td #{item.region_id}
+  .span
+    table
+      caption 地区
+      thead
+        tr
+          th id
+          th 名称
+      tbody
+        each item in regions
+          tr
+            td #{item.id}
+            td #{item.name}
+  .span
+    table
+      caption 商品
+      thead
+        tr
+          th id
+          th 名称
+      tbody
+        each item in products
+          tr
+            td #{item.id}
+            td #{item.name}
+
+.row
+  .span
+    table
+      caption 订单
+      thead
+        tr
+          th id
+          th 订单日期
+          th 交货日期
+          th 总金额
+      tbody
+        each item in orders
+          tr
+            td #{item.id}
+            td #{item.order_date}
+            td #{item.consign_date}
+            td #{item.totalprice}
+  .span
+    table
+      caption 订单明细
+      thead
+        tr
+          th id
+          th 订单id
+          th 商品id
+          th 单价
+          th 数量
+      tbody
+        each item in orderspec
+          tr
+            td #{item.id}
+            td #{item.order_id}
+            td #{item.product_id}
+            td #{item.eachprice}
+            td #{item.num}

@@ -1,0 +1,16 @@
+caption {
+  font-weight: bold;
+}
+th {
+  text-align: left;
+}
+th, td {
+  padding: 2px 4px;
+}
+.row {
+  margin-top: 40px;
+}
+.span {
+  display: inline-block;
+  margin-right: 100px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "mda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3",
+    "jade": "^1.9.2",
+    "lodash": "^3.8.0",
+    "lowdb": "^0.7.3"
+  }
+}

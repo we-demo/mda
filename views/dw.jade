@@ -1,0 +1,29 @@
+link(rel="stylesheet" href="style.css")
+
+h1 数据仓库
+
+.row
+  .span
+    table
+      caption 销售事实表
+      thead
+        tr
+          th id
+          th 订单日期id
+          th 交货日期id
+          th 客户id
+          th 地区id
+          th 商品id
+          th 销售量
+          th 销售金额
+      tbody
+        each item in market_fact
+          tr
+            td #{item.id}
+            td #{item.order_date_id}
+            td #{item.consign_date_id}
+            td #{item.customer_id}
+            td #{item.region_id}
+            td #{item.product_id}
+            td #{item.order_num}
+            td #{item.order_price}
