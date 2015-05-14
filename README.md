@@ -3,7 +3,7 @@
 使用web及nosql技术，对数据挖掘作业的一次创新作答，颠覆传统sql教学。
 
 - 项目架构：node.js/ express+jade+lowdb
-- 作业及作答文档：[《数据仓库与数据挖掘》作业3.doc](https://raw.githubusercontent.com/fritx/mda/dev/《数据仓库与数据挖掘》作业3.doc)
+- 作业及作答文档：[《数据仓库与数据挖掘》作业3.doc](https://raw.githubusercontent.com/fritx/mda/dev/doc/%E3%80%8A%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E3%80%8B%E4%BD%9C%E4%B8%9A3.doc)
 
 ## 完成进度
 
