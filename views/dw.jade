@@ -1,5 +1,6 @@
 link(rel="stylesheet" href="style.css")
 
+a(href="/db") >业务数据库
 h1 数据仓库
 
 .row
@@ -27,3 +28,63 @@ h1 数据仓库
             td #{item.product_id}
             td #{item.order_num}
             td #{item.order_price}
+
+.row
+  .span
+    table
+      caption 客户
+      thead
+        tr
+          th id
+          th 姓名
+          th 地址
+          th 地区id
+      tbody
+        each item in customers
+          tr
+            td #{item.id}
+            td #{item.name}
+            td #{item.address}
+            td #{item.region_id}
+  .span
+    table
+      caption 地区
+      thead
+        tr
+          th id
+          th 名称
+      tbody
+        each item in regions
+          tr
+            td #{item.id}
+            td #{item.name}
+  .span
+    table
+      caption 商品
+      thead
+        tr
+          th id
+          th 名称
+      tbody
+        each item in products
+          tr
+            td #{item.id}
+            td #{item.name}
+
+.row
+  .span
+    table
+      caption 日期
+      thead
+        tr
+          th id
+          th 年
+          th 月
+          th 日
+      tbody
+        each item in dates
+          tr
+            td #{item.id}
+            td #{item.year}
+            td #{item.month}
+            td #{item.date}

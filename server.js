@@ -11,6 +11,10 @@ app.set('views', './views/')
 
 app.use(express.static('./static'))
 
+app.get('/', function(req, res){
+  res.redirect('dw')
+})
+
 app.get('/db', function(req, res){
   var data = db.object // 直接访问对象
   res.render('db', data)

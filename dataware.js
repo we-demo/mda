@@ -3,6 +3,7 @@ var db = low('./db.json')
 var _ = require('lodash')
 var dw = low('./dw.json')
 
+dw.object = {}
 db('customers').each(function(item){
   dw('customers').push(item)
 })
@@ -13,7 +14,6 @@ db('products').each(function(item){
   dw('products').push(item)
 })
 
-dw.object = {}
 var dw_dates = dw('dates')
 var dw_market_fact = dw('market_fact')
 var db_customers = db('customers')
