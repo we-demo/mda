@@ -1,3 +1,6 @@
+table {
+  margin-top: 40px;
+}
 caption {
   font-weight: bold;
 }
@@ -8,9 +11,19 @@ th, td {
   padding: 2px 4px;
 }
 .row {
-  margin-top: 40px;
+  
 }
 .span {
   display: inline-block;
+  vertical-align: top;
   margin-right: 100px;
+}
+.span:last-child {
+  margin-right: 0;
+}
+input, button {
+  margin-right: 4px;
+}
+input:last-child, button:last-child {
+  margin-right: 0;
 }

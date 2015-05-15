@@ -3,6 +3,13 @@ link(rel="stylesheet" href="style.css")
 a(href="/db") >业务数据库
 h1 数据仓库
 
+form(action="dw")
+  input(type="text" name="slice_key" placeholder="字段名" value="#{_slice_key}")
+  input(type="text" name="slice_vals" placeholder="取值, 取值, 取值, .." value="#{_slice_vals}")
+  input(type="hidden" name="type" value="slice")
+  button(type="submit") 切块
+  a(href="dw") 复原
+
 .row
   .span
     table

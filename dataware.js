@@ -1,6 +1,5 @@
 var low = require('lowdb')
 var db = low('./db.json')
-var _ = require('lodash')
 var dw = low('./dw.json')
 
 dw.object = {}

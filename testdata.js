@@ -14,6 +14,12 @@ var data_customers = [
     name: '何国辉',
     address: '黎耀球楼 3楼',
     region_id: 2
+  },
+  {
+    id: 3,
+    name: '刘兴林',
+    address: '黎耀球楼 2楼',
+    region_id: 2
   }
 ]
 var data_regions = [
@@ -50,6 +56,20 @@ var data_orders = [
     order_date: '2015-05-14',
     consign_date: '2015-05-15',
     totalprice: 3000
+  },
+  {
+    id: 3,
+    customer_id: 3,
+    order_date: '2015-05-15',
+    consign_date: '2015-05-15',
+    totalprice: 2000
+  },
+  {
+    id: 4,
+    customer_id: 2,
+    order_date: '2015-05-15',
+    consign_date: '2015-05-16',
+    totalprice: 4000
   }
 ]
 var data_orderspec = [
@@ -63,6 +83,27 @@ var data_orderspec = [
   {
     id: 2,
     order_id: 2,
+    product_id: 2,
+    eachprice: 3000,
+    num: 1
+  },
+  {
+    id: 3,
+    order_id: 3,
+    product_id: 1,
+    eachprice: 1000,
+    num: 2
+  },
+  {
+    id: 4,
+    order_id: 4,
+    product_id: 1,
+    eachprice: 1000,
+    num: 1
+  },
+  {
+    id: 5,
+    order_id: 4,
     product_id: 2,
     eachprice: 3000,
     num: 1
